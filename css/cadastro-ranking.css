@@ -57,6 +57,7 @@ form {
 .bg-img {
     background-image: url(../img/bg-cad-2.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .form-control {

@@ -439,16 +439,24 @@
                         <div class="col-md-6 p-3">
                             <div class="row p-1 card-torneio">
                                 <div class="col-8 d-flex align-items-center">
-                                    <h5>Alterar nome da agremiação
+                                    <h5 id="name">Alterar nome da agremiação
                                     </h5>
+                                    <input class="hidden-input custom-input" type="text" name="agremiacao" id="agremiacao" value="Bora Bora BT">
                                 </div>
                                 <div class="col-4 text-end">
-                                    <a class="text-decoration-none" href="editar-circuito.html">
-                                        <button class="btn btn-white d-flex align-items-center button-mobile">
+                                    <a id="btn-input" class="text-decoration-none">
+                                        <button  class="btn btn-white d-flex align-items-center button-mobile">
                                             <img class="edit" src="img/edit.svg" alt="Editar">
                                             Editar
                                         </button><!--buttons__wrapper-->
                                     </a>
+                                    <a id="btn-salvar" class="text-decoration-none hidden-input">
+                                        <button class="btn btn-white d-flex align-items-center button-mobile">
+                                            <img class="edit" src="img/edit.svg" alt="Editar">
+                                            Salvar
+                                        </button><!--buttons__wrapper-->
+                                    </a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -479,6 +487,36 @@
          
         </div>
     </footer>
+
+    <script>
+        let input = document.getElementById('agremiacao')
+        let btnInput = document.getElementById('btn-input')
+        let btnSalvar = document.getElementById('btn-salvar')
+        let textInput = document.getElementById('name')
+
+        btnInput.addEventListener('click', ()=>{
+            input.classList.toggle('input-active')
+            btnInput.classList.add('hidden-input')
+            btnSalvar.classList.add('input-active')
+            if(input.classList.contains('input-active')){
+                textInput.style.display = 'none';
+            }else{
+                textInput.style.display = 'block';
+            }
+        })
+
+        btnSalvar.addEventListener('click', ()=>{
+            input.classList.toggle('input-active')
+            btnInput.classList.remove('hidden-input')
+            btnSalvar.classList.remove('input-active')
+            if(input.classList.contains('input-active')){
+                textInput.style.display = 'none';
+            }else{
+                textInput.style.display = 'block';
+            }
+        })
+        
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/menu.js"></script>
     <script src="js/copylink.js"></script>
