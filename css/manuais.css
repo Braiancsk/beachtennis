@@ -615,9 +615,6 @@ padding: 0.7rem;
         padding: 8px 12px;
         font-size: 12px;
     }
-    .hamburger{
-        display: block;
-    }
     .input-edit{
         max-width: 119px;
     }
@@ -635,5 +632,12 @@ padding: 0.7rem;
     }
     .video h6, .video span{
         font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 992px){
+    .hamburger{
+        display: block;
     }
 }

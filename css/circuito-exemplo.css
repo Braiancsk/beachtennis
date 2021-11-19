@@ -623,9 +623,6 @@ section.atualizacoes label{
         padding: 8px 12px;
         font-size: 12px;
     }
-    .hamburger{
-        display: block;
-    }
     .input-edit{
         max-width: 119px;
     }
@@ -640,5 +637,12 @@ section.atualizacoes label{
     }
     .line2{
         display:block;
+    }
+}
+
+
+@media screen and (max-width: 992px){
+    .hamburger{
+        display: block;
     }
 }

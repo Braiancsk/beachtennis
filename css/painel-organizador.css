@@ -10,6 +10,7 @@ body {
 
 .input-active{
     display: block !important; 
+    width:100%;
 }
 
 .line{
@@ -433,9 +434,7 @@ nav {
         padding:5px;
         margin: 0 3px;
     }
-    .hamburger{
-        display: block;
-    }
+  
     .torneio-box{
         margin-top: 30px;
     }
@@ -450,5 +449,11 @@ nav {
     }
     .line2{
         display:block;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .hamburger{
+        display: block;
     }
 }
