@@ -347,7 +347,9 @@ nav {
     border-radius: 4px;
 }
 
-
+.eye,.edit{
+    margin-right: 5px;
+}
 @media screen and (max-width: 768px) {
     footer img{
         max-width:100px !important;
@@ -398,10 +400,12 @@ nav {
     }
     .eye{
         max-width:30px;
+        margin-right: 5px;
     }
 
     .edit{
         max-width:20px;
+        margin-right: 5px;
     }
 
     .buttons{
@@ -416,7 +420,7 @@ nav {
         padding: 6px 20px;
     }
     .buttons button img{
-        margin: 0 5px;
+        margin-right: 10px;
     }
     .custom{
         padding: 6px 10px !important;
